@@ -1,56 +1,162 @@
 <html>
 
 <head>
-<title>My App</title>
+<title>Git Bash Tutorial</title>
 </head>
 <body>
-This is my app.
+<p>This is my app.
 
 I am testing Git Bash
+</p>
 
+<p>
 git init // initialize git folder
+</p>
 
+<p>
 git config --global user.name 'Abu Chowdhury'
-
+<p>
 git config --global user.email 'md.a.Chowdhury@gmail.com'
-
+</p>
 git add index.html //add index.html to our repo
+</p>
 
+<p>
 ##############
 $ git status
+</p>
+
+<p>
+On branch master
+
+No commits yet
+</p>
+
+<p>
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+</p>
+<p>
+        new file:   index.html
+</p>
+
+<p>
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        app.js
+#####################
+</p>
+git rm --cached index.html
+
+<p>
+$ git rm --cached index.html
+rm 'index.html'
+</p>
+
+<p>
+achow@DESKTOP-AJ0B4KH MINGW64 ~/Desktop/myapp (master)
+$ git status
+</p>
+
+<p>
+On branch master
+
+No commits yet
+</p>
+<p>
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+</p>
+<p>
+        app.js
+        index.html
+</p>
+
+<p>
+nothing added to commit but untracked files present (use "git add" to track)
+########################
+
+</p>
+
+<p>
+git add *.html //add only html
+</p>
+<p>
+$ git add . //add every file
+</p>
+<p>
+achow@DESKTOP-AJ0B4KH MINGW64 ~/Desktop/myapp (master)
+$ git status
+
+</p>
+
+<p>
 On branch master
 
 No commits yet
 
 Changes to be committed:
   (use "git rm --cached <file>..." to unstage)
+</p>
 
+<p>
+        new file:   app.js
         new file:   index.html
+</p>
 
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-
-        app.js
-#####################
-git rm --cached index.html
-
-$ git rm --cached index.html
-rm 'index.html'
-
-achow@DESKTOP-AJ0B4KH MINGW64 ~/Desktop/myapp (master)
+<p>
+Currently in staging until commit.. we have modified the file
 $ git status
+</p>
+<p>
 On branch master
 
 No commits yet
+</p>
 
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
+<p>
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+</p>
+<p>
+        new file:   app.js
+        new file:   index.html
+</p>
 
-        app.js
-        index.html
+<p>
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+</p>
+<p>
+        modified:   index.html
+git commit //will open default vim editor
+</p>
+<p>
+:wq //save and quit
+</p>
+<p>
+//Following will be displayed
+</p>
 
-nothing added to commit but untracked files present (use "git add" to track)
-########################
+<p>
+$ git commit
+</p>
+<p>
+[master (root-commit) 0e2f3b3]  Initial commit
+</p>
+<p>
+ 2 files changed, 59 insertions(+)
+</p>
+<p>
+ create mode 100644 app.js
+ create mode 100644 index.html
+</p>
+
+
+
+
 
 
 
